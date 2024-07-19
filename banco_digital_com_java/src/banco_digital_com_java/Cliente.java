@@ -1,7 +1,7 @@
 package banco_digital_com_java;
 
 public class Cliente {
-	
+
 	private String nome;
 
 	public String getNome() {

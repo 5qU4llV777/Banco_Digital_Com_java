@@ -3,16 +3,17 @@ package banco_digital_com_java;
 public class Main {
 
 	public static void main(String[] args) {
-		Conta cc = new ContaCorrente();
+		Cliente Claudio = new Cliente();
+		Claudio.setNome("Claudio nogueira");
+		
+		Conta cc = new ContaCorrente(Claudio);
+		Conta poupanca = new ContaPoupanca(Claudio);
+
 		cc.depositar(100);
-		
-		
-		Conta poupanca = new ContaPoupança();
-		
 		cc.transferir(100, poupanca);
 		
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
-	}	
+	}
 
 }

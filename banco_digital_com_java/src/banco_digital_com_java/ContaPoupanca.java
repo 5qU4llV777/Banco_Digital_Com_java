@@ -1,14 +1,14 @@
 package banco_digital_com_java;
 
-public class ContaCorrente extends Conta {
+public class ContaPoupanca extends Conta {
 
-	public ContaCorrente(Cliente cliente) {
+	public ContaPoupanca(Cliente cliente) {
 		super(cliente);
 	}
 
 	@Override
 	public void imprimirExtrato() {
-		System.out.println("=== Extrato Conta Corrente ===");
+		System.out.println("=== Extrato Conta Poupança ===");
 		super.imprimirInfosComuns();
 	}
 
@@ -17,5 +17,9 @@ public class ContaCorrente extends Conta {
 		// TODO Auto-generated method stub
 		
 	}
-	
 }
+	
+	
+	
+
+
